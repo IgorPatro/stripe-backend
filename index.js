@@ -169,6 +169,6 @@ app.post("/create-checkout-and-portal", async (req, res) => {
   )
 })
 
-app.listen(80, () => {
-  console.log(`Example app listening at port 80 which is default`)
+app.listen(process.env.PORT || 8080, () => {
+  console.log(`Example app listening at port 8080 or default`)
 })
